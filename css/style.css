@@ -22,13 +22,16 @@ body header img {
 }
 body header div {
   display: inline-block;
+  width: 78%;
+  height: 70px;
 }
 body header div h2 {
   float: left;
-  margin: 2%;
+  margin-left: 26%;
 }
 body header div i {
   float: right;
+  margin: 2%;
 }
 body header div i.fa-user-circle {
   width: 55px;
@@ -41,6 +44,10 @@ body main {
   height: 1000px;
   clear: both;
   background-color: #FFE7CC;
+}
+body main div {
+  width: 95%;
+  margin: auto;
 }
 body nav {
   display: block;

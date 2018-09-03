@@ -23,17 +23,21 @@ header{
 
   div{
     display: inline-block;
+    width: 78%;
+    height: 70px;
 
   h2{
     //width: 30%;
-   float: left;
-    margin: 2%;
+    float: left;
+  //  margin: 2%;
+    margin-left: 26%;
 
   }
 
   i{
     //width: 20%;
    float: right;
+   margin: 2%;
 
     &.fa-user-circle{
       width: 55px;
@@ -51,6 +55,11 @@ main{
   height: 1000px;
   clear: both;
   background-color: #FFE7CC;
+
+  div{
+    width: 95%;
+    margin: auto;
+  }
 }
 
 nav{
