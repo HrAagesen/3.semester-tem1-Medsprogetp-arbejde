@@ -23,7 +23,7 @@ header{
 
   div{
     display: inline-block;
-    width: 78%;
+    width: 81%;
     height: 70px;
 
   h2{
@@ -40,9 +40,9 @@ header{
    margin: 2%;
 
     &.fa-user-circle{
-      width: 55px;
-      height: 55px;
-      font-size: 50px
+    //  width: 55px;
+    //  height: 55px;
+      font-size: 325%;
 
     }
   }
@@ -79,15 +79,40 @@ nav{
 
   li{
     float: left;
-    font-size: 30px;
+    font-size: 184%;
     padding: 1.5%;
+    padding-left: 5%;
 
   }
 
+  .right{
+    padding-left: 35%;
+  }
+
+
   div{
+    width: 27.73%;
+    height: 15.59%;
+    background-color: white;
+    position: fixed;
+    left: 36.135%;
+    bottom: -4%;
+    border: 2px solid black;
+    border-radius: 50%;
 
     .levelscenter{
-
+      background-color: #45CBFF;
+      color: black;
+      position: fixed;
+      left: 38.67%;
+      bottom: -2.5%;
+      border-radius: 50%;
+      border: 2px solid black;
+      padding-left: 1.5%;
+      padding-top: 2%;
+      font-size: 48px;
+      width: 22.66%;
+      height: 12.74%;
     }
   }
   }
