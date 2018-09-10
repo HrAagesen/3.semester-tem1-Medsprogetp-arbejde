@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  background-color: #FFA745;
+  font-family: 'quicksand', 'sans serif';
+}
+
+body > main {
+
+  img {
+    margin-left: 85px;
+    margin-top: 55px;
+  }
+
+  label > p {
+    text-align: center;
+    color: #fff;
+  }
+
+  input[type=text], input[type=password] {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      text-align: center;
+      background-color: #FFE7CC;
+      color: #B26C1E;
+      border-radius: 25px;
+  }
+
+  button {
+      background-color: #fff;
+      color: #000;
+      padding: 14px 20px;
+      margin-top: 8px;
+      margin-bottom: 8px;
+      margin-left: 80px;
+      border: none;
+      cursor: pointer;
+      width: 50%;
+      border-radius: 25px;
+  }
+
+  button.opretbruger {
+    background-color: #45CBFF;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  button:hover {
+      opacity: 0.8;
+  }
+
+  .cancelbtn {
+      width: auto;
+      padding: 10px 18px;
+      background-color: #f44336;
+  }
+
+  .container {
+      padding: 16px;
+  }
+
+  span.psw {
+      float: right;
+      padding-top: 16px;
+  }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+}
