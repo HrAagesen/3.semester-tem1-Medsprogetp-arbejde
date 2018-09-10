@@ -15,6 +15,7 @@ header{
   background-color: #FFA745;
   width: 100%;
   height: 70px;
+  z-index: 1;
 
   a{
     text-decoration: none;
@@ -56,8 +57,8 @@ header{
 
 main{
   padding-top: 80px;
+  padding-bottom: 70px;
   width: 100%;
-  height: 1000px;
   clear: both;
   background-color: #FFE7CC;
 
@@ -65,6 +66,91 @@ main{
     width: 95%;
     margin: auto;
   }
+
+  /* Det er hvordan selve knappen ser ud som man klikker på i det nederste lag */
+  //Dagbog side start
+  .udvidknap {
+      width: 90%;
+      border: none;
+      background-color: white;
+      cursor: pointer;
+      padding: 7px 10px;
+      margin: 5%;
+      margin-top: 8px;
+      margin-bottom: 30px;
+      border-radius: 25px;
+
+      /* Dette er hvordan skriften i knappen ser ud */
+      h2 {
+        font-family: 'Palanquin Dark', sans-serif;
+        font-size: 15px;
+        padding-left: 6%;
+        color: #293952;
+        text-align: left;
+        background-color: white;
+      }
+     }
+
+      /* Dette er den div som kommer frem ved tryk på knappen på nederste lag */
+      .smartknap {
+        display: none;
+        width: 90%;
+        height: 220px;
+        padding: 25px 0;
+        text-align: left;
+        background-color: white;
+        margin-top: -49px;
+        border-radius: 0 0 25px 25px;
+        margin-bottom: 30px;
+
+        p {
+          font-size: 14px;
+        }
+        .bogbog{
+          height: 160px;
+          width: 95%;
+          margin: auto;
+          background-color: white;
+        }
+
+        .gem{
+        display: block;
+        width: 24%;
+        height: 45px;
+        padding: 0;
+        text-align: center;
+        background-color: #FFA745;
+        margin-top: 0;
+        border-radius: 25px;
+        margin-bottom: 0px;
+        float: left;
+        margin-left: 34%;
+        margin-top: 15px;
+        font-size: 20px;
+       }
+
+        .slet{
+        display: block;
+        width: 24%;
+        height: 45px;
+        padding: 0;
+        text-align: center;
+        background-color: #FFA745;
+        margin-top: 0;
+        border-radius: 25px;
+        margin-bottom: 0px;
+        float: left;
+        margin-left: 10%;
+        margin-top: 15px;
+        font-size: 20px;
+       }
+
+        p{
+          font-size: 32px;
+        }
+
+      }
+      //dagbog side slut
 }
 
 nav{
