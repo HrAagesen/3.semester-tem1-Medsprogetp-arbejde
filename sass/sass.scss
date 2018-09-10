@@ -43,15 +43,22 @@ header{
 
   }
 
+  a{
+
   i{
    float: right;
-   margin: 2%;
+   border-radius: 50%;
+   padding: 8px;
+   margin: 10px;
 
-    &.fa-user-circle{
-      font-size: 325%;
+    &.fa-user-alt{
+      font-size: 30px;
+      background-color: #FFE7CC;
+      color: #45CBFF;
 
+        }
+      }
     }
-  }
   }
 }//header slut
 
@@ -151,8 +158,133 @@ main{
 
       }
       //dagbog side slut
+
+      //Øvelse side start
+      .opgudvid {
+          width: 90%;
+          border: none;
+          background-color: white;
+          cursor: pointer;
+          padding: 7px 10px;
+          margin: 5%;
+          margin-top: 8px;
+          margin-bottom: 30px;
+          border-radius: 25px;
+
+          /* Dette er hvordan skriften i knappen ser ud */
+          h2 {
+            font-family: 'Palanquin Dark', sans-serif;
+            font-size: 15px;
+            padding-left: 6%;
+            color: #293952;
+            text-align: left;
+            background-color: white;
+          }
+         }
+
+          /* Dette er den div som kommer frem ved tryk på knappen på nederste lag */
+          .ovelseknap {
+            display: none;
+            width: 90%;
+            height: 220px;
+            padding: 25px 0;
+            text-align: left;
+            background-color: white;
+            margin-top: -49px;
+            border-radius: 0 0 25px 25px;
+            margin-bottom: 35px;
+
+            p {
+              font-size: 14px;
+            }
+            .ovelse{
+              height: 160px;
+              width: 95%;
+              margin: auto;
+              background-color: white;
+            }
+
+            .fotoknap{
+              display: block;
+              width: 24%;
+              height: 45px;
+              padding: 0;
+              text-align: center;
+              background-color: #FFA745;
+              margin-top: 0;
+              border-radius: 25px;
+              margin-bottom: 0px;
+              float: left;
+              //margin-left: 34%;
+              margin-top: 15px;
+              font-size: 20px;
+            }
+
+            .micphone{
+              display: block;
+              width: 24%;
+              height: 45px;
+              padding: 0;
+              text-align: center;
+              background-color: #FFA745;
+              border-radius: 25px;
+              margin-bottom: 0px;
+              float: left;
+              margin-left: 10%;
+              margin-top: 15px;
+              font-size: 24px;
+            }
+
+            p{
+              font-size: 32px;
+            }
+
+          }
+          //øvelser side slut
 }
 
+//brugerinfo.html style start
+section{
+  background-color: #FFE7CC;
+  padding-top: 70px;
+  padding-bottom: 70px;
+
+  div{
+
+    h4{
+      margin: 20px 0 15px 20px;
+    }
+
+    input{
+      margin-left: 20px;
+    }
+
+    form{
+
+
+      input{
+
+      }
+
+    }
+
+    select{
+      margin-left: 20px;
+
+      option{
+
+      }
+
+    }
+
+    button{
+
+    }
+  }
+
+}//brugerinfo.html slut
+
+//navigationsbaren i bunden af siden start
 nav{
   display: block;
   position: fixed;
@@ -208,6 +340,6 @@ nav{
     }
   }
   }
-}
+}//navigationsbar slut
 
 }//body slut

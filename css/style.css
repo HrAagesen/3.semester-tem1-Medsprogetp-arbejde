@@ -1,33 +1,36 @@
 @charset "UTF-8";
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  background-color: #FFA745;
+  box-sizing: border-box;
   font-family: 'quicksand', 'sans serif';
 }
 
-body > main img {
+body {
+  background-color: #FFA745;
+}
+body .loginsiden {
+  background-color: #FFA745;
+}
+body .loginsiden img {
   margin-left: 85px;
   margin-top: 55px;
 }
-body > main label > p {
+body .loginsiden label > p {
   text-align: center;
   color: #fff;
 }
-body > main input[type=text], body > main input[type=password] {
+body .loginsiden input[type=text], body .loginsiden input[type=password] {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   text-align: center;
   background-color: #FFE7CC;
   color: #B26C1E;
   border-radius: 25px;
 }
-body > main button {
+body .loginsiden button {
   background-color: #fff;
   color: #000;
   padding: 14px 20px;
@@ -39,23 +42,23 @@ body > main button {
   width: 50%;
   border-radius: 25px;
 }
-body > main button.opretbruger {
+body .loginsiden button.opretbruger {
   background-color: #45CBFF;
   width: 100%;
   margin-left: 0;
 }
-body > main button:hover {
+body .loginsiden button:hover {
   opacity: 0.8;
 }
-body > main .cancelbtn {
+body .loginsiden .cancelbtn {
   width: auto;
   padding: 10px 18px;
   background-color: #f44336;
 }
-body > main .container {
+body .loginsiden .container {
   padding: 16px;
 }
-body > main span.psw {
+body .loginsiden span.psw {
   float: right;
   padding-top: 16px;
 }
@@ -72,8 +75,7 @@ body > main span.psw {
   }
 }
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -110,12 +112,16 @@ body header div h2 {
   float: left;
   margin-left: 26%;
 }
-body header div i {
+body header div a i {
   float: right;
-  margin: 2%;
+  border-radius: 50%;
+  padding: 8px;
+  margin: 10px;
 }
-body header div i.fa-user-circle {
-  font-size: 325%;
+body header div a i.fa-user-alt {
+  font-size: 30px;
+  background-color: #FFE7CC;
+  color: #45CBFF;
 }
 body main {
   padding-top: 80px;
@@ -124,6 +130,7 @@ body main {
   clear: both;
   background-color: #FFE7CC;
   /* Det er hvordan selve knappen ser ud som man klikker på i det nederste lag */
+  /* Dette er den div som kommer frem ved tryk på knappen på nederste lag */
   /* Dette er den div som kommer frem ved tryk på knappen på nederste lag */
 }
 body main div {
@@ -202,6 +209,91 @@ body main .smartknap .slet {
 }
 body main .smartknap p {
   font-size: 32px;
+}
+body main .opgudvid {
+  width: 90%;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 7px 10px;
+  margin: 5%;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  /* Dette er hvordan skriften i knappen ser ud */
+}
+body main .opgudvid h2 {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 15px;
+  padding-left: 6%;
+  color: #293952;
+  text-align: left;
+  background-color: white;
+}
+body main .ovelseknap {
+  display: none;
+  width: 90%;
+  height: 220px;
+  padding: 25px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: -49px;
+  border-radius: 0 0 25px 25px;
+  margin-bottom: 35px;
+}
+body main .ovelseknap p {
+  font-size: 14px;
+}
+body main .ovelseknap .ovelse {
+  height: 160px;
+  width: 95%;
+  margin: auto;
+  background-color: white;
+}
+body main .ovelseknap .fotoknap {
+  display: block;
+  width: 24%;
+  height: 45px;
+  padding: 0;
+  text-align: center;
+  background-color: #FFA745;
+  margin-top: 0;
+  border-radius: 25px;
+  margin-bottom: 0px;
+  float: left;
+  margin-top: 15px;
+  font-size: 20px;
+}
+body main .ovelseknap .micphone {
+  display: block;
+  width: 24%;
+  height: 45px;
+  padding: 0;
+  text-align: center;
+  background-color: #FFA745;
+  border-radius: 25px;
+  margin-bottom: 0px;
+  float: left;
+  margin-left: 10%;
+  margin-top: 15px;
+  font-size: 24px;
+}
+body main .ovelseknap p {
+  font-size: 32px;
+}
+body section {
+  background-color: #FFE7CC;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+body section div h4 {
+  margin: 20px 0 15px 20px;
+}
+body section div input {
+  margin-left: 20px;
+}
+body section div select {
+  margin-left: 20px;
 }
 body nav {
   display: block;

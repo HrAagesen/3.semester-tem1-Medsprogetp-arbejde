@@ -1,10 +1,12 @@
 * {
   box-sizing: border-box;
-  background-color: #FFA745;
   font-family: 'quicksand', 'sans serif';
 }
 
-body > main {
+body{
+  background-color: #FFA745;
+.loginsiden {
+  background-color: #FFA745;
 
   img {
     margin-left: 85px;
@@ -67,7 +69,7 @@ body > main {
       padding-top: 16px;
   }
 }
-
+}
 /* Change styles for span and cancel button on extra small screens */
 @media screen and (max-width: 300px) {
     span.psw {

@@ -1,6 +1,76 @@
+@charset "UTF-8";
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #FFA745;
+  font-family: 'quicksand', 'sans serif';
+}
+
+body > main img {
+  margin-left: 85px;
+  margin-top: 55px;
+}
+body > main label > p {
+  text-align: center;
+  color: #fff;
+}
+body > main input[type=text], body > main input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #FFE7CC;
+  color: #B26C1E;
+  border-radius: 25px;
+}
+body > main button {
+  background-color: #fff;
+  color: #000;
+  padding: 14px 20px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-left: 80px;
+  border: none;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 25px;
+}
+body > main button.opretbruger {
+  background-color: #45CBFF;
+  width: 100%;
+  margin-left: 0;
+}
+body > main button:hover {
+  opacity: 0.8;
+}
+body > main .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+body > main .container {
+  padding: 16px;
+}
+body > main span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+* {
+  box-sizing: border-box;
 }
 
 body {
@@ -14,6 +84,10 @@ body header {
   background-color: #FFA745;
   width: 100%;
   height: 70px;
+  z-index: 1;
+}
+body header a {
+  text-decoration: none;
 }
 body header img {
   width: 50px;
@@ -22,8 +96,12 @@ body header img {
 }
 body header div {
   display: inline-block;
-  width: 78%;
+  width: 81%;
   height: 70px;
+}
+body header div a {
+  text-decoration: none;
+  color: black;
 }
 body header div h2 {
   float: left;
@@ -34,16 +112,93 @@ body header div i {
   margin: 2%;
 }
 body header div i.fa-user-circle {
-  width: 55px;
-  height: 55px;
-  font-size: 50px;
+  font-size: 325%;
 }
 body main {
   padding-top: 80px;
+  padding-bottom: 70px;
   width: 100%;
-  height: 1000px;
   clear: both;
   background-color: #FFE7CC;
+  /* Det er hvordan selve knappen ser ud som man klikker på i det nederste lag */
+  /* Dette er den div som kommer frem ved tryk på knappen på nederste lag */
+}
+body main div {
+  width: 95%;
+  margin: auto;
+}
+body main .udvidknap {
+  width: 90%;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  padding: 7px 10px;
+  margin: 5%;
+  margin-top: 8px;
+  margin-bottom: 30px;
+  border-radius: 25px;
+  /* Dette er hvordan skriften i knappen ser ud */
+}
+body main .udvidknap h2 {
+  font-family: 'Palanquin Dark', sans-serif;
+  font-size: 15px;
+  padding-left: 6%;
+  color: #293952;
+  text-align: left;
+  background-color: white;
+}
+body main .smartknap {
+  display: none;
+  width: 90%;
+  height: 220px;
+  padding: 25px 0;
+  text-align: left;
+  background-color: white;
+  margin-top: -49px;
+  border-radius: 0 0 25px 25px;
+  margin-bottom: 30px;
+}
+body main .smartknap p {
+  font-size: 14px;
+}
+body main .smartknap .bogbog {
+  height: 160px;
+  width: 95%;
+  margin: auto;
+  background-color: white;
+}
+body main .smartknap .gem {
+  display: block;
+  width: 24%;
+  height: 45px;
+  padding: 0;
+  text-align: center;
+  background-color: #FFA745;
+  margin-top: 0;
+  border-radius: 25px;
+  margin-bottom: 0px;
+  float: left;
+  margin-left: 34%;
+  margin-top: 15px;
+  font-size: 20px;
+}
+body main .smartknap .slet {
+  display: block;
+  width: 24%;
+  height: 45px;
+  padding: 0;
+  text-align: center;
+  background-color: #FFA745;
+  margin-top: 0;
+  border-radius: 25px;
+  margin-bottom: 0px;
+  float: left;
+  margin-left: 10%;
+  margin-top: 15px;
+  font-size: 20px;
+}
+body main .smartknap p {
+  font-size: 32px;
 }
 body nav {
   display: block;
@@ -62,6 +217,35 @@ body nav a {
 }
 body nav a li {
   float: left;
-  font-size: 30px;
+  font-size: 184%;
   padding: 1.5%;
+  padding-left: 5%;
+  width: 32.72%;
+}
+body nav a .right {
+  padding-left: 35%;
+}
+body nav a div {
+  width: 27.73%;
+  height: 15.59%;
+  background-color: white;
+  position: fixed;
+  left: 36.135%;
+  bottom: -4%;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+body nav a div .levelscenter {
+  background-color: #45CBFF;
+  color: black;
+  position: fixed;
+  left: 38.67%;
+  bottom: -2.5%;
+  border-radius: 50%;
+  border: 2px solid black;
+  padding-left: 1.5%;
+  padding-top: 2%;
+  font-size: 48px;
+  width: 22.66%;
+  height: 12.74%;
 }
