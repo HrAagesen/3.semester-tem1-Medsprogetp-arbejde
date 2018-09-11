@@ -25,47 +25,46 @@
 <section>
 
   <div class="">
-    <h4>Fulde Navn:</h4>
+    <h2>Fulde Navn:</h2>
       <input type="text" placeholder="Fulde Navn" name="uname" required>
 
     </div>
 
     <div class="">
-      <h4>E-mail:</h4>
+      <h2>E-mail:</h2>
         <input type="text" placeholder="E-mail" name="uname" required>
 
       </div>
 
       <div class="">
-        <h4>Køn:</h4>
+        <h2>Køn:</h2>
         <form>
-          <input type="radio" name="gender" value="male"> Male
-          <input type="radio" name="gender" value="female"> Female
+          <input type="radio" name="gender" value="male"><label> Mand</label>
+          <input type="radio" name="gender" value="female"> <label>Kvinde</label>
         </form>
 
       </div>
 
       <div class="">
-        <h4>Alder:</h4>
+        <h2>Alder:</h2>
         <form>
-          <input type="date" name="bday">
+          <input class="inputfelt" type="date" name="bday">
         </form>
 
         </div>
 
         <div class="">
-          <h4>Niveau:</h4>
+          <h2>Niveau:</h2>
           <select name="Niveau">
-            <option value="volvo">Niveau 1</option>
-            <option value="saab">Niveau 2</option>
-            <option value="fiat">Niveau 3</option>
+            <option value="Niveau 1">Niveau 1</option>
+            <option value="Niveau 2">Niveau 2</option>
+            <option value="Niveau 3">Niveau 3</option>
           </select>
 
           </div>
 
           <div class="">
-            <h4>Upload Profilbillede:</h4>
-              <input type="text" placeholder="Upload Profilbillede" name="uname" required>
+            <h2>Upload Profilbillede:</h2>
               <button type="button" name="Upload">Upload</button>
             </div>
 
@@ -73,15 +72,7 @@
 
 
 
-<nav>
-<a href="ovelser.html" > <li>Øvelser</li></a>
-<a href="index.html">
-  <div>
-  <li class="levelscenter">3</li>
-</div>
-</a>
-<a href="dagbog.html"><li class="right">Dagbog</li></a>
-</nav>
+<div class="bundopret"><a href="index.html"><button class="opretbruger" type="submit">Opret bruger</button></a></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="js/js.js"></script>
