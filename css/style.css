@@ -85,42 +85,6 @@ body {
   margin: 0;
   font-family: 'Quicksand', sans-serif;
 }
-body header {
-  position: fixed;
-  display: block;
-  clear: both;
-  background-color: #FFA745;
-  width: 100%;
-  height: 70px;
-}
-body header a {
-  text-decoration: none;
-}
-body header img {
-  width: 50px;
-  height: auto;
-  margin: 2%;
-}
-body header div {
-  display: inline-block;
-  width: 81%;
-  height: 70px;
-}
-body header div a {
-  text-decoration: none;
-  color: black;
-}
-body header div h2 {
-  float: left;
-  margin-left: 26%;
-}
-body header div i {
-  float: right;
-  margin: 2%;
-}
-body header div i.fa-user-circle {
-  font-size: 325%;
-}
 body main {
   padding-top: 80px;
   width: 100%;
@@ -129,7 +93,7 @@ body main {
   background-color: #FFE7CC;
 }
 body main img {
-  width: 275px;
+  width: 265px;
   margin-top: 25px;
   margin-left: 30px;
   border-radius: 50%;
@@ -145,6 +109,9 @@ body main .level2 {
   border-radius: 50%;
   margin-left: 270px;
   border: 2px solid #000;
+  z-index: 2;
+  margin-top: -75px;
+  position: absolute;
 }
 body main .level2 .level {
   background-color: #45CBFF;
@@ -158,10 +125,19 @@ body main .level2 .level {
   text-align: center;
   line-height: 92px;
 }
-body main .level2 .indholdwrap {
-  background-color: #000;
-  width: 300px;
-  height: 300px;
+body main .indholdwrap {
+  background-color: white;
+  width: 95%;
+  height: auto;
+  border-radius: 25px;
+  margin-top: 10px;
+  z-index: 1;
+}
+body main .indholdwrap p {
+  margin: 5px;
+  padding: 8px;
+  padding-top: 40px;
+  z-index: 10;
 }
 body nav {
   display: block;
