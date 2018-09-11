@@ -82,7 +82,6 @@ body .loginsiden span.psw {
 }
 
 body {
-  background-color: #FFE7CC;
   margin: 0;
   font-family: 'Quicksand', sans-serif;
 }
@@ -93,7 +92,6 @@ body header {
   background-color: #FFA745;
   width: 100%;
   height: 70px;
-  z-index: 1;
 }
 body header a {
   text-decoration: none;
@@ -115,6 +113,145 @@ body header div a {
 body header div h2 {
   float: left;
   margin-left: 26%;
+}
+body header div i {
+  float: right;
+  margin: 2%;
+}
+body header div i.fa-user-circle {
+  font-size: 325%;
+}
+body main {
+  padding-top: 80px;
+  width: 100%;
+  height: 1000px;
+  clear: both;
+  background-color: #FFE7CC;
+}
+body main img {
+  width: 275px;
+  margin-top: 25px;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+body main div {
+  width: 95%;
+  margin: auto;
+}
+body main .level2 {
+  background-color: #fff;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-left: 270px;
+  border: 2px solid #000;
+}
+body main .level2 .level {
+  background-color: #45CBFF;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-left: 8px;
+  margin-top: 8px;
+  border: 2px solid #000;
+  font-size: 48px;
+  text-align: center;
+  line-height: 92px;
+}
+body main .level2 .indholdwrap {
+  background-color: #000;
+  width: 300px;
+  height: 300px;
+}
+body nav {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  background-color: #FFA745;
+  list-style: none;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+}
+body nav a {
+  text-decoration: none;
+  text-align: center;
+  color: white;
+}
+body nav a li {
+  float: left;
+  font-size: 184%;
+  padding: 1.5%;
+  padding-left: 5%;
+  width: 32.72%;
+}
+body nav a .right {
+  padding-left: 35%;
+}
+body nav a div {
+  width: 27.73%;
+  height: 15.59%;
+  background-color: white;
+  position: fixed;
+  left: 36.135%;
+  bottom: -4%;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+body nav a div .levelscenter {
+  background-color: #45CBFF;
+  color: black;
+  position: fixed;
+  left: 38.67%;
+  bottom: -2.5%;
+  border-radius: 50%;
+  border: 2px solid black;
+  padding-left: 1.5%;
+  padding-top: 2%;
+  font-size: 48px;
+  width: 22.66%;
+  height: 12.74%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FFE7CC;
+  margin: 0;
+  font-family: 'Quicksand', sans-serif;
+}
+body header {
+  position: fixed;
+  display: block;
+  clear: both;
+  background-color: #FFA745;
+  width: 100%;
+  height: 75px;
+  z-index: 1;
+}
+body header a {
+  text-decoration: none;
+}
+body header img {
+  width: 15%;
+  height: 52px;
+  margin: 12px;
+}
+body header div {
+  display: inline-block;
+  width: 75%;
+  height: 70px;
+}
+body header div a {
+  text-decoration: none;
+  color: black;
+}
+body header div h2 {
+  float: left;
+  margin-left: 20%;
 }
 body header div a i {
   float: right;
@@ -261,10 +398,10 @@ body main .ovelseknap .fotoknap {
   padding: 0;
   text-align: center;
   background-color: #FFA745;
-  margin-top: 0;
   border-radius: 25px;
   margin-bottom: 0px;
   float: left;
+  margin-left: 20%;
   margin-top: 15px;
   font-size: 20px;
 }
@@ -360,7 +497,7 @@ body .bundopret {
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 65px;
+  height: 72px;
   padding-top: 4px;
 }
 body .bundopret .opretbruger {
@@ -369,11 +506,12 @@ body .bundopret .opretbruger {
   padding: 14px 20px;
   margin: auto;
   margin-top: 8px;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   border: none;
   cursor: pointer;
   width: 50%;
   border-radius: 25px;
+  font-size: 20px;
 }
 body nav {
   display: block;
