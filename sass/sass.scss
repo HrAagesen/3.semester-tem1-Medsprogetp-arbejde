@@ -7,6 +7,10 @@
 
 }
 
+.baggrundbody{
+  background-color: #FFA745;
+}
+
 body{
   background-color: #FFE7CC;
   margin: 0;
@@ -26,14 +30,14 @@ header{
      }
 
   img{
-    width: 15%;
-    height: 52px;
-    margin: 12px;
+    width: 22%;
+    height: auto;
+    margin: 6px;
   }
 
   div{
     display: inline-block;
-    width: 75%;
+    width: 68%;
     height: 70px;
 
     a{
@@ -93,7 +97,6 @@ main{
 
       /* Dette er hvordan skriften i knappen ser ud */
       h2 {
-        font-family: 'Palanquin Dark', sans-serif;
         font-size: 15px;
         padding-left: 6%;
         color: #293952;
@@ -177,7 +180,6 @@ main{
 
           /* Dette er hvordan skriften i knappen ser ud */
           h2 {
-            font-family: 'Palanquin Dark', sans-serif;
             font-size: 15px;
             padding-left: 6%;
             color: #293952;
@@ -252,7 +254,7 @@ section{
   background-color: #FFE7CC;
   padding-top: 70px;
   padding-bottom: 80px;
-
+  text-align: center;
 
   div{
 
